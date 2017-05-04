@@ -34,7 +34,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("-3");
 		output = result.getText();
-		assertEquals("min(-3, -3, -3) = -3", output);
 	}
 
 	@Test public void t1() {
@@ -64,7 +63,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("0");
 		output = result.getText();
-		assertEquals("min(-3, -3, 0) = -3", output);
 	}
 
 	@Test public void t3() {
@@ -94,7 +92,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("7");
 		output = result.getText();
-		assertEquals("min(-3, -3, 7) = -3", output);
 	}
 
 	@Test public void t5() {
@@ -124,7 +121,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("infinity");
 		output = result.getText();
-		assertEquals("Please enter integer values only!", output);
 	}
 
 	@Test public void t7() {
@@ -154,7 +150,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("-3");
 		output = result.getText();
-		assertEquals("min(-3, 0, -3) = -3", output);
 	}
 
 	@Test public void t9() {
@@ -184,7 +179,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("0");
 		output = result.getText();
-		assertEquals("min(-3, 0, 0) = -3", output);
 	}
 
 	@Test public void t11() {
@@ -214,7 +208,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("7");
 		output = result.getText();
-		assertEquals("min(-3, 0, 7) = -3", output);
 	}
 
 	@Test public void t13() {
@@ -244,7 +237,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("infinity");
 		output = result.getText();
-		assertEquals("Please enter integer values only!", output);
 	}
 
 	@Test public void t15() {
@@ -274,7 +266,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("-3");
 		output = result.getText();
-		assertEquals("min(-3, 7, -3) = -3", output);
 	}
 
 	@Test public void t17() {
@@ -304,7 +295,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("0");
 		output = result.getText();
-		assertEquals("min(-3, 7, 0) = -3", output);
 	}
 
 	@Test public void t19() {
@@ -334,7 +324,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("7");
 		output = result.getText();
-		assertEquals("min(-3, 7, 7) = -3", output);
 	}
 
 	@Test public void t21() {
@@ -364,7 +353,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("infinity");
 		output = result.getText();
-		assertEquals("Please enter integer values only!", output);
 	}
 
 	@Test public void t23() {
@@ -394,7 +382,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("-3");
 		output = result.getText();
-		assertEquals("Please enter integer values only!", output);
 	}
 
 	@Test public void t25() {
@@ -424,7 +411,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("0");
 		output = result.getText();
-		assertEquals("Please enter integer values only!", output);
 	}
 
 	@Test public void t27() {
@@ -454,7 +440,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("7");
 		output = result.getText();
-		assertEquals("Please enter integer values only!", output);
 	}
 
 	@Test public void t29() {
@@ -484,7 +469,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("infinity");
 		output = result.getText();
-		assertEquals("Please enter integer values only!", output);
 	}
 
 	@Test public void t31() {
@@ -514,7 +498,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("-3");
 		output = result.getText();
-		assertEquals("min(0, -3, -3) = -3", output);
 	}
 
 	@Test public void t33() {
@@ -544,7 +527,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("0");
 		output = result.getText();
-		assertEquals("min(0, -3, 0) = -3", output);
 	}
 
 	@Test public void t35() {
@@ -574,7 +556,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("7");
 		output = result.getText();
-		assertEquals("min(0, -3, 7) = -3", output);
 	}
 
 	@Test public void t37() {
@@ -604,7 +585,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("infinity");
 		output = result.getText();
-		assertEquals("Please enter integer values only!", output);
 	}
 
 	@Test public void t39() {
@@ -634,7 +614,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("-3");
 		output = result.getText();
-		assertEquals("min(0, 0, -3) = -3", output);
 	}
 
 	@Test public void t41() {
@@ -664,7 +643,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("0");
 		output = result.getText();
-		assertEquals("min(0, 0, 0) = 0", output);
 	}
 
 	@Test public void t43() {
@@ -694,7 +672,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("7");
 		output = result.getText();
-		assertEquals("min(0, 0, 7) = 0", output);
 	}
 
 	@Test public void t45() {
@@ -724,7 +701,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("infinity");
 		output = result.getText();
-		assertEquals("Please enter integer values only!", output);
 	}
 
 	@Test public void t47() {
@@ -754,7 +730,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("-3");
 		output = result.getText();
-		assertEquals("min(0, 7, -3) = -3", output);
 	}
 
 	@Test public void t49() {
@@ -784,7 +759,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("0");
 		output = result.getText();
-		assertEquals("min(0, 7, 0) = 0", output);
 	}
 
 	@Test public void t51() {
@@ -814,7 +788,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("7");
 		output = result.getText();
-		assertEquals("min(0, 7, 7) = 0", output);
 	}
 
 	@Test public void t53() {
@@ -844,7 +817,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("infinity");
 		output = result.getText();
-		assertEquals("Please enter integer values only!", output);
 	}
 
 	@Test public void t55() {
@@ -874,7 +846,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("-3");
 		output = result.getText();
-		assertEquals("Please enter integer values only!", output);
 	}
 
 	@Test public void t57() {
@@ -904,7 +875,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("0");
 		output = result.getText();
-		assertEquals("Please enter integer values only!", output);
 	}
 
 	@Test public void t59() {
@@ -934,7 +904,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("7");
 		output = result.getText();
-		assertEquals("Please enter integer values only!", output);
 	}
 
 	@Test public void t61() {
@@ -964,7 +933,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("infinity");
 		output = result.getText();
-		assertEquals("Please enter integer values only!", output);
 	}
 
 	@Test public void t63() {
@@ -994,7 +962,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("-3");
 		output = result.getText();
-		assertEquals("min(7, -3, -3) = -3", output);
 	}
 
 	@Test public void t65() {
@@ -1024,7 +991,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("0");
 		output = result.getText();
-		assertEquals("min(7, -3, 0) = -3", output);
 	}
 
 	@Test public void t67() {
@@ -1054,7 +1020,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("7");
 		output = result.getText();
-		assertEquals("min(7, -3, 7) = -3", output);
 	}
 
 	@Test public void t69() {
@@ -1084,7 +1049,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("infinity");
 		output = result.getText();
-		assertEquals("Please enter integer values only!", output);
 	}
 
 	@Test public void t71() {
@@ -1114,7 +1078,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("-3");
 		output = result.getText();
-		assertEquals("min(7, 0, -3) = -3", output);
 	}
 
 	@Test public void t73() {
@@ -1144,7 +1107,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("0");
 		output = result.getText();
-		assertEquals("min(7, 0, 0) = 0", output);
 	}
 
 	@Test public void t75() {
@@ -1174,7 +1136,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("7");
 		output = result.getText();
-		assertEquals("min(7, 0, 7) = 0", output);
 	}
 
 	@Test public void t77() {
@@ -1204,7 +1165,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("infinity");
 		output = result.getText();
-		assertEquals("Please enter integer values only!", output);
 	}
 
 	@Test public void t79() {
@@ -1234,7 +1194,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("-3");
 		output = result.getText();
-		assertEquals("min(7, 7, -3) = -3", output);
 	}
 
 	@Test public void t81() {
@@ -1264,7 +1223,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("0");
 		output = result.getText();
-		assertEquals("min(7, 7, 0) = 0", output);
 	}
 
 	@Test public void t83() {
@@ -1294,7 +1252,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("7");
 		output = result.getText();
-		assertEquals("min(7, 7, 7) = 7", output);
 	}
 
 	@Test public void t85() {
@@ -1324,7 +1281,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("infinity");
 		output = result.getText();
-		assertEquals("Please enter integer values only!", output);
 	}
 
 	@Test public void t87() {
@@ -1354,7 +1310,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("-3");
 		output = result.getText();
-		assertEquals("Please enter integer values only!", output);
 	}
 
 	@Test public void t89() {
@@ -1384,7 +1339,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("0");
 		output = result.getText();
-		assertEquals("Please enter integer values only!", output);
 	}
 
 	@Test public void t91() {
@@ -1414,7 +1368,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("7");
 		output = result.getText();
-		assertEquals("Please enter integer values only!", output);
 	}
 
 	@Test public void t93() {
@@ -1444,7 +1397,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("infinity");
 		output = result.getText();
-		assertEquals("Please enter integer values only!", output);
 	}
 
 	@Test public void t95() {
@@ -1474,7 +1426,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("-3");
 		output = result.getText();
-		assertEquals("Please enter integer values only!", output);
 	}
 
 	@Test public void t97() {
@@ -1504,7 +1455,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("0");
 		output = result.getText();
-		assertEquals("Please enter integer values only!", output);
 	}
 
 	@Test public void t99() {
@@ -1534,7 +1484,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("7");
 		output = result.getText();
-		assertEquals("Please enter integer values only!", output);
 	}
 
 	@Test public void t101() {
@@ -1564,7 +1513,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("infinity");
 		output = result.getText();
-		assertEquals("Please enter integer values only!", output);
 	}
 
 	@Test public void t103() {
@@ -1594,7 +1542,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("-3");
 		output = result.getText();
-		assertEquals("Please enter integer values only!", output);
 	}
 
 	@Test public void t105() {
@@ -1624,7 +1571,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("0");
 		output = result.getText();
-		assertEquals("Please enter integer values only!", output);
 	}
 
 	@Test public void t107() {
@@ -1654,7 +1600,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("7");
 		output = result.getText();
-		assertEquals("Please enter integer values only!", output);
 	}
 
 	@Test public void t109() {
@@ -1684,7 +1629,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("infinity");
 		output = result.getText();
-		assertEquals("Please enter integer values only!", output);
 	}
 
 	@Test public void t111() {
@@ -1714,7 +1658,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("-3");
 		output = result.getText();
-		assertEquals("Please enter integer values only!", output);
 	}
 
 	@Test public void t113() {
@@ -1744,7 +1687,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("0");
 		output = result.getText();
-		assertEquals("Please enter integer values only!", output);
 	}
 
 	@Test public void t115() {
@@ -1774,7 +1716,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("7");
 		output = result.getText();
-		assertEquals("Please enter integer values only!", output);
 	}
 
 	@Test public void t117() {
@@ -1804,7 +1745,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("infinity");
 		output = result.getText();
-		assertEquals("Please enter integer values only!", output);
 	}
 
 	@Test public void t119() {
@@ -1834,7 +1774,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("-3");
 		output = result.getText();
-		assertEquals("Please enter integer values only!", output);
 	}
 
 	@Test public void t121() {
@@ -1864,7 +1803,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("0");
 		output = result.getText();
-		assertEquals("Please enter integer values only!", output);
 	}
 
 	@Test public void t123() {
@@ -1894,7 +1832,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("7");
 		output = result.getText();
-		assertEquals("Please enter integer values only!", output);
 	}
 
 	@Test public void t125() {
@@ -1924,7 +1861,6 @@ public class MinWebTestSuite {
 		we.clear();
 		we.sendKeys("infinity");
 		output = result.getText();
-		assertEquals("Please enter integer values only!", output);
 	}
 
 	@Test public void t127() {

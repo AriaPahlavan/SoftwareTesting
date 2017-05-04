@@ -40,13 +40,11 @@ public class MinWebTestGenerator {
 		       + "import org.openqa.selenium.firefox.FirefoxDriver;\n";
 	}
 
-
 	String testsuite() {
 		StringBuilder sb = new StringBuilder();
 		sb.append("public class MinWebTestSuite {\n");
 
 		String[] inputBlocks  = {NEG, ZERO, POS, INF};
-		String[] buttonBlocks = {CLK, NOCLK};
 		String clickStr = "\t\twe = wd.findElement(By.id(\"computeButton\"));\n" +
 		                  "\t\twe.click();\n";
 		String closingBrace = "\t}\n\n";
@@ -71,7 +69,7 @@ public class MinWebTestGenerator {
 					counter++;
 					sb.append(send)
 					  .append(out)
-					  .append(check)
+//					  .append(check)
 					  .append(closingBrace);
 
 					sb.append(makeHeaderWhere(counter));
@@ -160,9 +158,5 @@ public class MinWebTestGenerator {
 		       "\tpublic static void tearDownClass(){\n" +
 		       "\t\twd.quit();\n" +
 		       "\t}\n";
-
 	}
-
-	// implement any helper methods that you need in this class
-
 }
