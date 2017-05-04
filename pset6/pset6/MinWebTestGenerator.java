@@ -8,7 +8,8 @@ public class MinWebTestGenerator {
 			INF = "infinity",
 			CLK = "click",
 			NOCLK = "notclick",
-			INV = "Please enter integer values only!";
+			INV = "Please enter integer values only!",
+			EMPTY_ASSERT = "\t\tassertEquals(\"\", output);\n";
 
 	public static void main(String[] a) {
 		String suite = new MinWebTestGenerator().createTestSuite();
@@ -32,6 +33,7 @@ public class MinWebTestGenerator {
 	String imports() {
 		return "import static org.junit.Assert.*;\n\n"
 		       + "import org.junit.AfterClass;\n"
+		       + "import org.junit.After;\n"
 		       + "import org.junit.BeforeClass;"
 		       + "import org.junit.Test;\n\n"
 		       + "import org.openqa.selenium.By;\n"
@@ -52,6 +54,7 @@ public class MinWebTestGenerator {
 
 		sb.append(initGlobal());
 		sb.append(initSetUpClass());
+		sb.append(initiTearDown());
 
 
 		for (int i = 0; i < inputBlocks.length; i++) {
@@ -69,7 +72,7 @@ public class MinWebTestGenerator {
 					counter++;
 					sb.append(send)
 					  .append(out)
-//					  .append(check)
+					  .append(EMPTY_ASSERT)
 					  .append(closingBrace);
 
 					sb.append(makeHeaderWhere(counter));
@@ -106,13 +109,10 @@ public class MinWebTestGenerator {
 
 	private String sendBlockWhere(String x, String y, String z) {
 		return "\t\twe = wd.findElement(By.id(\"x\"));\n" +
-		       "\t\twe.clear();\n"+
 		       "\t\twe.sendKeys(\""+x+"\");\n" +
 		       "\t\twe = wd.findElement(By.id(\"y\"));\n" +
-		       "\t\twe.clear();\n"+
 		       "\t\twe.sendKeys(\""+y+"\");\n" +
 		       "\t\twe = wd.findElement(By.id(\"z\"));\n" +
-		       "\t\twe.clear();\n"+
 		       "\t\twe.sendKeys(\""+z+"\");\n";
 	}
 
@@ -149,8 +149,15 @@ public class MinWebTestGenerator {
 		       "\t\tString classPath = MinWebTest.class.getResource(\"min.html\").toString();\n" +
 		       "\t\twd.get(classPath);\n"+
 		       "\t\tresult = wd.findElement(By.id(\"result\"));\n"+
+		       "\t}\n\n";
+	}
 
-		       "\t}\n";
+	private String initiTearDown(){
+		return "\t@After\n" +
+		       "\tpublic void tearDown() {\n" +
+		       "\t\twd.navigate().refresh();\n" +
+		       "\t\tresult = wd.findElement(By.id(\"result\"));\n" +
+		       "\t}\n\n";
 	}
 
 	private String initTearDownClass() {
