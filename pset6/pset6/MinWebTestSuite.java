@@ -2,33 +2,50 @@ package pset6;
 
 import static org.junit.Assert.*;
 
-import org.junit.AfterClass;
 import org.junit.After;
-import org.junit.BeforeClass;import org.junit.Test;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+
+/**
+ * In total 27 tests fail when ran with minandmax.html
+ *
+ * All failure are due to FAULTY TESTS
+ */
 public class MinWebTestSuite {
-	String output;
-	WebElement we;
-	static WebDriver wd;
-	static WebElement result;
+	private String output;
+	private WebElement we;
+	private static WebDriver wd;
+	private static WebElement result;
+
 	@BeforeClass
 	public static void setUpClass() {
 		System.setProperty("webdriver.gecko.driver", "/home/aria/webdriver/firefox/geckodriver");
 		wd = new FirefoxDriver();
 		String classPath = MinWebTest.class.getResource("min.html").toString();
 		wd.get(classPath);
+	}
+
+	@Before
+	public void setUp() {
 		result = wd.findElement(By.id("result"));
 	}
 
 	@After
 	public void tearDown() {
 		wd.navigate().refresh();
-		result = wd.findElement(By.id("result"));
+	}
+
+	@AfterClass
+	public static void tearDownClass(){
+		wd.quit();
 	}
 
 	@Test public void t0() {
@@ -43,6 +60,8 @@ public class MinWebTestSuite {
 	}
 
 	@Test public void t1() {
+		//FAULTY TEST
+
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("-3");
 		we = wd.findElement(By.id("y"));
@@ -67,6 +86,8 @@ public class MinWebTestSuite {
 	}
 
 	@Test public void t3() {
+		//FAULTY TEST
+
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("-3");
 		we = wd.findElement(By.id("y"));
@@ -91,6 +112,8 @@ public class MinWebTestSuite {
 	}
 
 	@Test public void t5() {
+		//FAULTY TEST
+
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("-3");
 		we = wd.findElement(By.id("y"));
@@ -139,6 +162,8 @@ public class MinWebTestSuite {
 	}
 
 	@Test public void t9() {
+		//FAULTY TEST
+
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("-3");
 		we = wd.findElement(By.id("y"));
@@ -163,6 +188,8 @@ public class MinWebTestSuite {
 	}
 
 	@Test public void t11() {
+		//FAULTY TEST
+
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("-3");
 		we = wd.findElement(By.id("y"));
@@ -187,6 +214,8 @@ public class MinWebTestSuite {
 	}
 
 	@Test public void t13() {
+		//FAULTY TEST
+
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("-3");
 		we = wd.findElement(By.id("y"));
@@ -235,6 +264,8 @@ public class MinWebTestSuite {
 	}
 
 	@Test public void t17() {
+		//FAULTY TEST
+
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("-3");
 		we = wd.findElement(By.id("y"));
@@ -259,6 +290,8 @@ public class MinWebTestSuite {
 	}
 
 	@Test public void t19() {
+		//FAULTY TEST
+
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("-3");
 		we = wd.findElement(By.id("y"));
@@ -283,6 +316,8 @@ public class MinWebTestSuite {
 	}
 
 	@Test public void t21() {
+		//FAULTY TEST
+
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("-3");
 		we = wd.findElement(By.id("y"));
@@ -427,6 +462,8 @@ public class MinWebTestSuite {
 	}
 
 	@Test public void t33() {
+		//FAULTY TEST
+
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("0");
 		we = wd.findElement(By.id("y"));
@@ -451,6 +488,8 @@ public class MinWebTestSuite {
 	}
 
 	@Test public void t35() {
+		//FAULTY TEST
+
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("0");
 		we = wd.findElement(By.id("y"));
@@ -475,6 +514,8 @@ public class MinWebTestSuite {
 	}
 
 	@Test public void t37() {
+		//FAULTY TEST
+
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("0");
 		we = wd.findElement(By.id("y"));
@@ -523,6 +564,8 @@ public class MinWebTestSuite {
 	}
 
 	@Test public void t41() {
+		//FAULTY TEST
+
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("0");
 		we = wd.findElement(By.id("y"));
@@ -547,6 +590,8 @@ public class MinWebTestSuite {
 	}
 
 	@Test public void t43() {
+		//FAULTY TEST
+
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("0");
 		we = wd.findElement(By.id("y"));
@@ -571,6 +616,8 @@ public class MinWebTestSuite {
 	}
 
 	@Test public void t45() {
+		//FAULTY TEST
+
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("0");
 		we = wd.findElement(By.id("y"));
@@ -619,6 +666,8 @@ public class MinWebTestSuite {
 	}
 
 	@Test public void t49() {
+		//FAULTY TEST
+
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("0");
 		we = wd.findElement(By.id("y"));
@@ -643,6 +692,8 @@ public class MinWebTestSuite {
 	}
 
 	@Test public void t51() {
+		//FAULTY TEST
+
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("0");
 		we = wd.findElement(By.id("y"));
@@ -667,6 +718,8 @@ public class MinWebTestSuite {
 	}
 
 	@Test public void t53() {
+		//FAULTY TEST
+
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("0");
 		we = wd.findElement(By.id("y"));
@@ -811,6 +864,8 @@ public class MinWebTestSuite {
 	}
 
 	@Test public void t65() {
+		//FAULTY TEST
+
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("7");
 		we = wd.findElement(By.id("y"));
@@ -835,6 +890,8 @@ public class MinWebTestSuite {
 	}
 
 	@Test public void t67() {
+		//FAULTY TEST
+
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("7");
 		we = wd.findElement(By.id("y"));
@@ -859,6 +916,8 @@ public class MinWebTestSuite {
 	}
 
 	@Test public void t69() {
+		//FAULTY TEST
+
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("7");
 		we = wd.findElement(By.id("y"));
@@ -907,6 +966,8 @@ public class MinWebTestSuite {
 	}
 
 	@Test public void t73() {
+		//FAULTY TEST
+
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("7");
 		we = wd.findElement(By.id("y"));
@@ -931,6 +992,8 @@ public class MinWebTestSuite {
 	}
 
 	@Test public void t75() {
+		//FAULTY TEST
+
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("7");
 		we = wd.findElement(By.id("y"));
@@ -955,6 +1018,8 @@ public class MinWebTestSuite {
 	}
 
 	@Test public void t77() {
+		//FAULTY TEST
+
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("7");
 		we = wd.findElement(By.id("y"));
@@ -1003,6 +1068,8 @@ public class MinWebTestSuite {
 	}
 
 	@Test public void t81() {
+		//FAULTY TEST
+
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("7");
 		we = wd.findElement(By.id("y"));
@@ -1027,6 +1094,8 @@ public class MinWebTestSuite {
 	}
 
 	@Test public void t83() {
+		//FAULTY TEST
+
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("7");
 		we = wd.findElement(By.id("y"));
@@ -1051,6 +1120,8 @@ public class MinWebTestSuite {
 	}
 
 	@Test public void t85() {
+		//FAULTY TEST
+
 		we = wd.findElement(By.id("x"));
 		we.sendKeys("7");
 		we = wd.findElement(By.id("y"));
@@ -1567,9 +1638,5 @@ public class MinWebTestSuite {
 		assertEquals("Please enter integer values only!", output);
 	}
 
-	@AfterClass
-	public static void tearDownClass(){
-		wd.quit();
-	}
 }
 
